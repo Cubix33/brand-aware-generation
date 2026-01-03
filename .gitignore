@@ -1,5 +1,12 @@
-.DS_Store
-dist/
-node_modules/
-venv/
+# Secrets
+.env
 backend/.env
+
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+dist/
