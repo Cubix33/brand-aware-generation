@@ -1,0 +1,13 @@
+{
+  "name": "brand-ai-generator",
+  "version": "1.0.0",
+  "scripts": {
+    "clean": "ccweb-add-on-scripts clean",
+    "build": "ccweb-add-on-scripts build && node copy-sandbox.js",
+    "start": "ccweb-add-on-scripts start",
+    "postbuild": "node copy-sandbox.js"
+  },
+  "devDependencies": {
+    "@adobe/ccweb-add-on-scripts": "^1.0.0"
+  }
+}
