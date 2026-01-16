@@ -1,9 +1,35 @@
+# Core FastAPI dependencies
 fastapi==0.109.0
 uvicorn[standard]==0.27.0
 python-multipart==0.0.6
-replicate==0.23.1
+pydantic==2.5.3
+python-dotenv==1.0.0
+
+# Image processing (existing + BrandDiffusion)
 pillow==10.2.0
 numpy==1.26.3
-python-dotenv==1.0.0
-pydantic==2.5.3
+opencv-python==4.8.1.78
+scikit-learn==1.4.0
+
+# API clients
+replicate==0.23.1
 httpx==0.26.0
+requests==2.31.0
+
+# BrandDiffusion - Core ML dependencies
+# Note: These are heavy dependencies. Install only if using BrandDiffusion features.
+# torch>=2.0.0  # Uncomment and specify version for CUDA support
+# torchvision>=0.15.0  # Uncomment if needed
+# diffusers>=0.21.0  # Stable Diffusion pipelines
+# transformers>=4.35.0  # For CLIP, LLM models
+# accelerate>=0.24.0  # For model optimization
+
+# BrandDiffusion - Optional/Advanced features
+# mediapipe>=0.10.0  # For hand/face detection
+# gfpgan>=1.3.8  # Face restoration
+# groq>=0.4.0  # For Groq API (LLM inference)
+# peft>=0.6.0  # For LoRA adapters (PosterLlama)
+# bitsandbytes>=0.41.0  # For 4-bit quantization (optional, requires CUDA)
+
+# Remove.bg API (if using logo background removal)
+# Note: This requires REMOVEBG_API_KEY environment variable
